@@ -22,6 +22,7 @@
 			<MaxHitPoints>300</MaxHitPoints>
 			<!-- <WorkToBuild>3200</WorkToBuild> -->
 			<Flammability>1.0</Flammability>
+			<Comfort>0.80</Comfort>
 			<BedRestEffectiveness>1.5</BedRestEffectiveness>
 			<ImmunityGainSpeedFactor>3</ImmunityGainSpeedFactor>
 			<MedicalTendQualityOffset>3</MedicalTendQualityOffset>
@@ -35,6 +36,7 @@
 			<Steel>100</Steel>
 			<Medicine>10</Medicine>
 			<Component>10</Component>
+			<Plasteel>50</Plasteel>
 		</costList>
 		<building>
 			<Bed_ShowSleeperBody>false</Bed_ShowSleeperBody>
