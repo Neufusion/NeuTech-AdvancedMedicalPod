@@ -34,7 +34,7 @@
 		<costList>
 			<Steel>100</Steel>
 			<Medicine>10</Medicine>
-			<Component>8</Component>
+			<Component>10</Component>
 		</costList>
 		<building>
 			<Bed_ShowSleeperBody>false</Bed_ShowSleeperBody>
