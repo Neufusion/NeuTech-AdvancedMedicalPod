@@ -5,14 +5,14 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>NeuTechAdvMedPod</defName>
-		<label>NeuTech - Advanced Medical Pod</label>
-		<Description>The Advanced Medical Pod enhances the effectiveness of medical operations and accelerates the healing process. Does NOT induce cryptosleep. Connectable to Vitals Monitor</Description>
+		<label>NeuTech Advanced Medical Pod</label>
+		<Description>Improves postoperative recovery, treatment of injury/illness, accelerates immunity, and reduces healing time. Connectable to Vitals Monitor. Does NOT induce cryptosleep.</Description>
 		<ThingClass>Building_Bed</ThingClass>
 		<graphicData>
 			<texPath>Things/Buildings/Furniture/NeuTechAdvMedPod</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<!-- <shaderType>CutoutComplex</shaderType> -->
-			<drawSize>(2,3)</drawSize>
+			<drawSize>(3,4)</drawSize>
 			<damageData>
 				<rect>(0,0.05,1,1.95)</rect>
 			</damageData>
@@ -20,12 +20,13 @@
 		<AltitudeLayer>Building</AltitudeLayer>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
-			<!-- <WorkToBuild>3200</WorkToBuild> -->
+			<WorkToBuild>3200</WorkToBuild>
+			<Mass>200</Mass>
 			<Flammability>1.0</Flammability>
-			<Comfort>0.80</Comfort>
-			<BedRestEffectiveness>1.5</BedRestEffectiveness>
-			<ImmunityGainSpeedFactor>3</ImmunityGainSpeedFactor>
-			<MedicalTendQualityOffset>3</MedicalTendQualityOffset>
+			<Comfort>0.9</Comfort>
+			<BedRestEffectiveness>0.9</BedRestEffectiveness>
+			<ImmunityGainSpeedFactor>1.50</ImmunityGainSpeedFactor>
+			<MedicalTendQualityOffset>0.20</MedicalTendQualityOffset>
 		</statBases>
 		<Size>(1,2)</Size>
 		<stuffCategories>
@@ -34,23 +35,24 @@
 		<costStuffCount>150</costStuffCount>
 		<costList>
 			<Steel>100</Steel>
-			<Medicine>10</Medicine>
-			<Component>10</Component>
-			<Plasteel>50</Plasteel>
+			<Medicine>15</Medicine>
+			<Component>20</Component>
+			<Plasteel>60</Plasteel>
 		</costList>
 		<building>
 			<Bed_ShowSleeperBody>false</Bed_ShowSleeperBody>
-			<bed_healPerDay>200</bed_healPerDay>
+			<bed_healPerDay>16</bed_healPerDay>
 			<bed_defaultMedical>true</bed_defaultMedical>
 		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>350</basePowerConsumption>
+				<basePowerConsumption>1000</basePowerConsumption>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<soundPowerOn>PowerOnSmall</soundPowerOn>
 				<soundPowerOff>PowerOffSmall</soundPowerOff>
 			</li>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>VitalsMonitor</li>
@@ -58,7 +60,10 @@
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>6</glowRadius>
-				<glowColor>(0,255,255,0)</glowColor>
+				<glowColor>(0,0,0,255)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>2</heatPerSecond>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
@@ -70,12 +75,13 @@
 		<Passability>PassThroughOnly</Passability>
 		<DrawGUIOverlay>True</DrawGUIOverlay>
 		<researchPrerequisites>
-			<li>HospitalBed</li>
+			<li>NeuTechAdvMedPod</li>
 		</researchPrerequisites>
 		<designationCategory>Furniture</designationCategory>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
+		<!-- <minifiedDef>MinifiedFurniture</minifiedDef> -->
 	</ThingDef>
 
 </Buildings>

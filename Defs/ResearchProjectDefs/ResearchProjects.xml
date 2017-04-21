@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>NeuTechAdvMedPod</defName>
+		<label>NeuTech Advanced Medical Pod</label>
+		<description>Using the latest medical technology from NeuTech, including Negative-Pressure Wound Therapy and Robotically-Assisted Treatment, the Advanced Medical Pod improves postoperative recovery, treatment of injury/illness, accelerates immunity, and reduces healing time. Unlocks NeuTech Advanced Medical Pod.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>HospitalBed</li>
+		</prerequisites>
+    <!-- <researchViewX>8</researchViewX> -->
+		<!-- <researchViewY>1</researchViewY> -->
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>
