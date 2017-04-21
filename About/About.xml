@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<ModMetaData>
-		<name>NeuTech - Advanced Medical Pod</name>
+		<name>NeuTech Advanced Medical Pod</name>
 		<author>Neufusion</author>
 		<url>https://ludeon.com/forums/index.php?topic=31839</url>
 		<targetVersion>0.16.1393</targetVersion>
-		<description>Using the latest medical technology from NeuTech, including Negative-Pressure Wound Therapy and Robotically-Assisted Surgery, the Advanced Medical Pod enhances the effectiveness of medical operations and accelerates the healing process. Does NOT induce cryptosleep. Connectable to Vitals Monitor.</description>
+		<description>  Using the latest medical technology from NeuTech, including Negative-Pressure Wound Therapy and Robotically-Assisted Treatment, the Advanced Medical Pod improves postoperative recovery, treatment of injury/illness, accelerates immunity, and reduces healing time. Connectable to Vitals Monitor. Does NOT induce cryptoslee.</description>
 </ModMetaData>
